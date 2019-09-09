@@ -6,39 +6,16 @@
 
       <!-- User Avatar -->
       <div class="mb-3 mx-auto">
-        <img class="rounded-circle" :src="user.profile_picture" :alt="user.name" width="110">
+        <img class="rounded-circle" src="https://cdn1-production-images-kly.akamaized.net/o4NQmi2zrRswzFhtFDVBndz7jd0=/0x0:662x373/673x379/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1990819/original/038866200_1520932615-Sule__4_.jpg" :alt="user.name" width="200">
       </div>
 
       <!-- User Name -->
-      <h4 class="mb-0">{{ user.fullname }}</h4>
+      <h4 class="mb-0">Ken</h4>
 
       <!-- User Job Title -->
-      <span class="text-muted d-block mb-2">{{ user.jobTitle }}</span>
-
-      <!-- User Follow -->
-      <d-button pill outline size="sm" class="mb-2"> <i class="material-icons mr-1">person_add</i> Follow</d-button>
+      <span class="text-muted d-block mb-2">pengangguran</span>
 
     </d-card-header>
-
-    <d-list-group flush>
-
-      <!-- User Performance Report -->
-      <d-list-group-item class="px-4">
-        <div class="progress-wrapper">
-          <strong class="text-muted d-block mb-2">{{ user.performanceReportTitle }}</strong>
-          <d-progress class="progress-sm">
-            <span class="progress-value">{{ user.performanceReportValue }}%</span>
-            <d-progress-bar :max="100" :value="user.performanceReportValue" />
-          </d-progress>
-        </div>
-      </d-list-group-item>
-
-      <!-- User Meta -->
-      <d-list-group-item>
-        <strong class="text-muted d-block mb-2">{{ user.metaTitle }}</strong>
-        <span>{{ user.metaValue }}</span>
-      </d-list-group-item>
-    </d-list-group>
 
   </d-card>
 </template>
